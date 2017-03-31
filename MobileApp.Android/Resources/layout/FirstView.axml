@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto/MobileApp.Android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  <!-- First name -->
+  <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    local:MvxBind="Text FirstName"
+    />
+  <!-- Last name -->
+  <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    local:MvxBind="Text LastName"
+    />
+  <!-- Full name -->
+  <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="40dp"
+    local:MvxBind="Text FullName"
+    />
+  <!-- Call another activity-->
+  <Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Go Simple"
+    local:MvxBind="Click GoAnotherActivity" />
+</LinearLayout>
